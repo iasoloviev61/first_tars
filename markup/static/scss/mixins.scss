@@ -30,3 +30,74 @@
 }
 
 // You can add your own mixins here:
+/* --------- responsive mixins --------- */
+@mixin phones {
+    @media screen and (min-width: 320px){
+        @content;
+    }
+}
+
+@mixin tablets {
+    @media screen and (min-width: 480px) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin big-desktop {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin inlineblock ($valine: top) {
+    display: inline-block;
+    vertical-align: $valine;
+}
+
+@mixin placecolor($color: #000000) {
+    &::-webkit-input-placeholder {
+        color: $color;
+    }
+    &:-moz-placeholder {
+        color: $color;
+    }
+    &::-moz-placeholder {
+        color: $color;
+    }
+    &:-ms-input-placeholder {
+        color: $color;
+    }
+}
+
+/* --------- style mixins --------- */
+@mixin cover(){
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* --------- centered --------- */
+
+@mixin absolute-center {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+}
+
+
+

@@ -7,6 +7,7 @@ require('./tars/tars');
 const gulp = tars.packages.gulp;
 
 // Require system and user's tasks
+gulp.task('removeAttr', () => gulp.start('removeAttr'));
 // You can add your own tasks.
 // All your tasks have to be in tars/user-tasks folder
 tars.helpers.tarsFsHelper

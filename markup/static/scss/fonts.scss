@@ -16,3 +16,98 @@
 // Var for using custom font
 $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
 */
+
+// font bernier
+@font-face {
+  font-family: 'bernier_distressedregular';
+  src: url('../fonts/bernier/bernierdistressed-regular-webfont.woff2') format('woff2'),
+  url('../fonts/bernier/bernierdistressed-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bernier_regularregular';
+  src: url('../fonts/bernier/bernierregular-regular-webfont.woff2') format('woff2'),
+  url('../fonts/bernier/bernierregular-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'bernier_shaderegular';
+  src: url('../fonts/bernier/berniershade-regular-webfont.woff2') format('woff2'),
+  url('../fonts/bernier/berniershade-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotobold';
+  src: url('../fonts/roboto/roboto-bold-webfont.woff2') format('woff2'),
+  url('../fonts/roboto/roboto-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotobold_italic';
+  src: url('../fonts/roboto/roboto-bolditalic-webfont.woff2') format('woff2'),
+  url('../fonts/roboto/roboto-bolditalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotoitalic';
+  src: url('../fonts/roboto/roboto-italic-webfont.woff2') format('woff2'),
+  url('../fonts/roboto/roboto-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotolight';
+  src: url('../fonts/roboto/roboto-light-webfont.woff2') format('woff2'),
+  url('../fonts/roboto/roboto-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotolight_italic';
+  src: url('../fonts/roboto/roboto-lightitalic-webfont.woff2') format('woff2'),
+  url('../fonts/roboto/roboto-lightitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotomedium';
+  src: url('../fonts/roboto/roboto-medium-webfont.woff2') format('woff2'),
+  url('../fonts/roboto/roboto-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotomedium_italic';
+  src: url('../fonts/roboto/roboto-mediumitalic-webfont.woff2') format('woff2'),
+  url('../fonts/roboto/roboto-mediumitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotoregular';
+  src: url('../fonts/roboto/roboto-regular-webfont.woff2') format('woff2'),
+  url('../fonts/roboto/roboto-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//fonts bernier
+$bdistres: 'bernier_distressedregular', 'Arial', sans-serif;
+$bregular: 'bernier_regularregular', 'Arial', sans-serif;
+$bshader: 'bernier_shaderegular', 'Arial', sans-serif;
+
+//fonts roboto
+$ritalic: 'robotoitalic', 'Arial', sans-serif;
+$rlight: 'robotolight', 'Arial', sans-serif;
+$rlight_italic: 'robotolight_italic', 'Arial', sans-serif;
+$rmedium: 'robotomedium', 'Arial', sans-serif;
+$rmedium_italiic: 'robotomedium_italic', 'Arial', sans-serif;
+$rregular: 'robotoregular', 'Arial', sans-serif;
+$rbold: 'robotobold', 'Arial', sans-serif;
+
