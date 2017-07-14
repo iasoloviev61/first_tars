@@ -1,0 +1,12 @@
+.header {
+  position: relative;
+  min-height: 88vh;
+  background: url('%=static=%assets/header/header_bg.jpg') no-repeat;
+  background-position: center top;
+  @include tablets() {
+    background: $color--blend url('%=static=%assets/header/header_bg_big.jpg') no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+  }
+
+}
