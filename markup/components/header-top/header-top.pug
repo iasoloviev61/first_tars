@@ -1,4 +1,8 @@
+include ../social-icons/social-icons.pug
+include ../menu-button/menu-button.pug
 mixin header-top(data)
     .container
         .header-top
-            
+            +social-icons()
+            +menu-button()
+
