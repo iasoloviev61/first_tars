@@ -1,0 +1,36 @@
+.user-info {
+  margin-top: 50px;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto;
+  @include tablets {
+    margin-top: auto;
+  }
+}
+.user-info__avatar {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  width: 40%;
+  min-width: 150px;
+  min-height: 150px;
+  @include tablets {
+    min-width: 200px;
+    min-height: 190px;
+  }
+  }
+
+.user-info__name {
+  font-family: $rmedium;
+  font-size: 21px;
+  color: $white--main;
+  text-align: center;
+}
+.user-info__tagline {
+  font-family: $rlight;
+  font-size: 14px;
+  text-align: center;
+}
