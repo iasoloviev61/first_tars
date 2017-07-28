@@ -1,5 +1,13 @@
 .menu-button {
   display: flex;
   align-items: center;
+  &:hover .menu-button__img {
+    fill: $main;
+
+  }
 }
 
+.menu-button__img {
+  fill:  $white--main;
+  transition: fill 0.3s;
+}
