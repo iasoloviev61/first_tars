@@ -1,2 +1,7 @@
 mixin social-icons(data)
-    .social-icons
+    ul.social-icons
+        each val, index in data
+            li.social-icons__item
+                a(class="socail-icons__link" href= val.socialLink target=_blank)
+                   svg(class="socail-icons__img" width="25" height="15")
+                      use(xlink:href= val.socialIcon)

@@ -1,1 +1,24 @@
+.social-icons {
+  display: flex;
+  justify-content: flex-start;
+  flex-shrink: 1;
+}
 
+.social-icons__item {
+  margin-right: 25px;
+}
+
+
+.socail-icons__link {
+  display: block;
+  &:hover .socail-icons__img {
+     fill: $white--main;
+
+  }
+}
+
+.socail-icons__img {
+  fill: $white--ligth-50;
+  transition: fill 0.3s;
+
+}
