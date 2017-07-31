@@ -3,7 +3,9 @@
   margin-bottom: auto;
   margin-right: auto;
   margin-left: auto;
-  @include tablets {
+  display: flex;
+  flex-direction: column;
+  @include tablets() {
     margin-top: auto;
   }
 }
@@ -14,12 +16,11 @@
   border-radius: 50%;
   margin: 0 auto;
   margin-bottom: 25px;
-  width: 40%;
-  min-width: 150px;
-  min-height: 150px;
+  min-width: 30vh;
+  min-height: 30vh;
   @include tablets {
-    min-width: 200px;
-    min-height: 190px;
+    //min-width: 200px;
+    //min-height: 190px;
   }
   }
 
@@ -28,9 +29,15 @@
   font-size: 21px;
   color: $white--main;
   text-align: center;
+  @include tablets() {
+    font-size: 35px;
+  }
 }
 .user-info__tagline {
   font-family: $rlight;
   font-size: 14px;
   text-align: center;
+  @include tablets() {
+    font-size: 16px;
+  }
 }
