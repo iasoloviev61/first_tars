@@ -1,4 +1,5 @@
 include ../user-info/user-info.pug
 mixin header-middle(data)
     .header-middle
+        != pugHelpers.Icon.call(locals, {iconName: 'portfolio_header', className: 'header-middle__watermark', iconWidth: '0', iconHeight: '0'})
         +user-info()

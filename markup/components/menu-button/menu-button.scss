@@ -10,4 +10,8 @@
 .menu-button__img {
   fill:  $white--main;
   transition: fill 0.3s;
+  @include tablets() {
+    width: 40px;
+    height: 40px;
+  }
 }

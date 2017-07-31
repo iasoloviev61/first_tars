@@ -5,6 +5,7 @@
   margin-left: auto;
   display: flex;
   flex-direction: column;
+  z-index: 1;
   @include tablets() {
     margin-top: auto;
   }
