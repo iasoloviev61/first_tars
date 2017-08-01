@@ -1,2 +1,10 @@
+include ../page-title/page-title.pug
 mixin aboutme(data)
     .aboutme
+        case lang
+            when "ru"
+                +page-title(titles.ru)
+            when "en"
+                +page-title(titles.en)
+            default
+                +page-title(titles.en)
