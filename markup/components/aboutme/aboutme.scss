@@ -1,1 +1,18 @@
+.aboutme {
+background-color: $main--beige;
+}
 
+.aboutme__photo {
+  @include tablets() {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+}
+
+.aboutme__text {
+  font-family: $rregular;
+  font-size: 16px;
+  color: $gray;
+  max-width: 97%;
+  margin: 0 auto;
+}
