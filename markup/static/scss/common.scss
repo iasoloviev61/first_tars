@@ -95,8 +95,11 @@ $desktop-screen: (
     min-height: 100%;
 }
 .container {
-    max-width: 95%;
-    margin: 0 auto;
-    position: relative;
-    height: 100%;
+    @include tablets() {
+        max-width: 60%;
+        margin: 0 auto;
+        position: relative;
+        height: 100%;
+    }
+
 }

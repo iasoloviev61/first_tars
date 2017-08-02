@@ -2,26 +2,27 @@ include ../page-title/page-title.pug
 include ../page-title/page-subtitle.pug
 mixin aboutme(data)
     .aboutme
-        case lang
-            when "ru"
-                +page-title(titles.ru.aboutme)
-            when "en"
-                +page-title(titles.en.aboutme)
-            default
-                +page-title(titles.en.aboutme)
-        .aboutme__photo
-            img(src="%=static=%img/assets/user-info/main-foto_1x.jpg" alt="Soloviev Igor")
-        .aboutme-description
+        .container
             case lang
                 when "ru"
-                    +page-subtitle(titles.ru.whoi)
+                    +page-title(titles.ru.aboutme)
                 when "en"
-                    +page-subtitle(titles.en.whoi)
+                    +page-title(titles.en.aboutme)
                 default
-                    +page-subtitle(titles.en.whoi)
-            .aboutme__text
-                p.
-                    Я веб разработчик из Шатуры. Мне 30 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
-                    Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент и доработаю его. А пока посмотрите, как тут всё классно и красиво!
+                    +page-title(titles.en.aboutme)
+            .aboutme__photo
+                img(src="%=static=%img/assets/user-info/main-foto_1x.jpg" alt="Soloviev Igor")
+            .aboutme-description
+                case lang
+                    when "ru"
+                        +page-subtitle(titles.ru.whoi)
+                    when "en"
+                        +page-subtitle(titles.en.whoi)
+                    default
+                        +page-subtitle(titles.en.whoi)
+                .aboutme__text
+                    p.
+                        Я веб разработчик из Шатуры. Мне 30 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                        Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент и доработаю его. А пока посмотрите, как тут всё классно и красиво!
 
 

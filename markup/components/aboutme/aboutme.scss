@@ -1,11 +1,14 @@
 .aboutme {
 background-color: $main--beige;
+  @include laptop() {
+    width: 50%;
+  }
 }
 
 .aboutme__photo {
   @include tablets() {
-    max-width: 60%;
-    margin: 0 auto;
+    //max-width: 60%;
+    //margin: 0 auto;
   }
 }
 
